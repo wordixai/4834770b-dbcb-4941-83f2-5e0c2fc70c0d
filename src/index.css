@@ -1,18 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
 The @apply directive should not be used with the group utility class.
 */
 
 @layer base {
   :root {
-   
+    --retro-bg-start: 35 100% 95%;
+    --retro-bg-end: 25 100% 85%;
+    --retro-text: 25 60% 30%;
+    --retro-text-light: 25 40% 40%;
   }
 
   .dark {
 
+  }
+}
+
+@layer utilities {
+  .transition-all-3s {
+    transition: all 3s ease-in-out;
   }
 }
